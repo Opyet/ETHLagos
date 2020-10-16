@@ -1,0 +1,99 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "checkInbox",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"name": "_ipfsHash",
+						"type": "string"
+					}
+				],
+				"name": "sendIPFS",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "_ipfsHash",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "ipfsSent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "response",
+						"type": "string"
+					}
+				],
+				"name": "inboxResponse",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/IPFSTut1.sol": "IPFSInbox"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/IPFSTut1.sol": {
+			"keccak256": "0x4bd596619a948a2dfcfdc70a25f344d65b9f36ce3455cec21d3f12faccc7a0e6",
+			"urls": [
+				"bzzr://e2b5ce1327ae2d050b94392b5150d29c5fd1bf70515258a1b34cbda508fdf516"
+			]
+		}
+	},
+	"version": 1
+}
